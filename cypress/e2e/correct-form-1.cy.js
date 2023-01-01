@@ -3,7 +3,7 @@ context('Actions', () => {
     cy.visit('https://dev.reky.se/')
   })
 
-  it('should click elements and write in fields', () => {
+  it('should fill out form and send', () => {
 
     cy.get('#rcc-confirm-button')
       .click()
@@ -31,5 +31,8 @@ context('Actions', () => {
 
     cy.get('[data-test-id="contact-tel-textbox"]')
       .type('000000000')
+
+    cy.get('[data-test-id="send-form-button"]')
+    .click()
   })
 })
