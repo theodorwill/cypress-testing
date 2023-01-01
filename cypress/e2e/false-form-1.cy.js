@@ -8,13 +8,7 @@ context('Actions', () => {
       cy.get('[data-test-id="yrke-systemutvecklare"]')
         .click()
       
-      cy.get('[data-test-id="net"]')
-        .click()
-      
-      cy.get('[data-test-id="expertise-next-button"]')
-        .click()
-      
-      cy.get('[data-test-id="place-textbox-textbox"]')
-      .type('Stockholm')
+      cy.get('[data-test-id="net"]', {timeout: 2000})
+            .click()
     })
    })

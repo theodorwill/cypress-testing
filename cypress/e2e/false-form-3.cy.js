@@ -27,6 +27,6 @@ context('Actions', () => {
             .click()
         
         cy.get('[data-text-id="contact-name-validation"]')
-        .should('have.text', 'Du måste fylla i ett namn')
+            .should('have.text', 'Du måste fylla i ett namn')
     })
 })

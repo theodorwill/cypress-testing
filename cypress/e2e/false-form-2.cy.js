@@ -12,6 +12,9 @@ context('Actions', () => {
             .click()
 
         cy.get('.ioqKdk')
-        .click()
+            .click()
+        
+        cy.get('[data-test-id="yrke-fritext"]')
+        .should('have.css', 'border-color', 'rgb(255, 0, 0)')
     })
 })
